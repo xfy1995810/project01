@@ -1,0 +1,8 @@
+.idea
+/embed/dist/*
+!/embed/dist/.gitkeep
+server/logs/
+/logs/*
+/dcss*
+/*.db
+.vscode

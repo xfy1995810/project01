@@ -1,0 +1,31 @@
+SERVER:
+  PORT: 80
+  DEBUG: true
+
+# 携程池配置
+GPool:
+  Size: 1000
+
+DB:
+  PATH: "./sqlite.db"
+
+LOG:
+  PATH: "./logs/dcss.log"
+  # 0： panic, 1: fatal, 2: error, 3: warn, 4: info, 5: debug, 6: trace
+  LEVEL: 5
+  # 日志保留的天数，超过会自动删除
+  MaxAge: 60
+
+# CMD超时时间
+CMD:
+  TIMEOUT: 5
+
+# 防止爆破 (每个接口+请求方式)每秒请求次数开关,0不限制
+PreventBlast:
+  frequency: 3
+
+Captcha:
+  # 验证码过期时间
+  Timeout: 60
+  # 验证码长度
+  Length: 6
